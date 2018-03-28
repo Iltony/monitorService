@@ -1,0 +1,3 @@
+rootProject.name = 'monitorService'
+
+include ':app'
