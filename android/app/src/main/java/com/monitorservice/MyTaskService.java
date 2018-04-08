@@ -19,7 +19,6 @@ public class MyTaskService extends HeadlessJsTaskService {
 
 		Bundle extras = intent.getExtras();
 		WritableMap data = extras != null ? Arguments.fromBundle(extras) : Arguments.createMap();
-		// WritableMap data = Arguments.createMap();
 		
 		int timeout = 30; //extras.getInt("timeout");
 		Log.d(TASK_NAME, String.format("Returning HeadlessJsTaskConfig, timeout=%s ms", timeout));

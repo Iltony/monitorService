@@ -45,6 +45,7 @@ public class MainApplication extends Application implements ReactApplication {
 		super.onCreate();
 
     Intent myIntent = new Intent(getApplicationContext(), MyTaskService.class);
+    myIntent.putExtra("defaultTimeout", 2000);
     getApplicationContext().startService(myIntent);
     HeadlessJsTaskService.acquireWakeLockNow(getApplicationContext());
 		SoLoader.init(this, false);
